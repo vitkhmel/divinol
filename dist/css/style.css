@@ -365,6 +365,130 @@
   animation-name: fadeInUpBig;
 }
 
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
 .fixedsticky {
   position: -moz-sticky;
   position: -ms-sticky;
@@ -4100,6 +4224,7 @@ form .placeholder,
 
 header {
   position: relative;
+  z-index: 5;
 }
 
 header a {
@@ -4395,6 +4520,7 @@ header .box-for-menu-second-level {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: -1;
 }
 
 header .menu__item:hover .box-for-menu-second-level {
@@ -4831,6 +4957,7 @@ input[type=text].header-search__text:focus {
 
 .top-slider__box-for-img {
   position: relative;
+  padding-bottom: 53.02%;
 }
 
 .top-slider__content {
@@ -5234,10 +5361,12 @@ footer a:hover {
 }
 
 .main-map .b-title__left-part {
+  display: block;
   text-align: left;
 }
 
 .main-map .b-title__right-part {
+  display: block;
   text-align: right;
   padding-left: 50px;
 }
@@ -5958,6 +6087,12 @@ footer a:hover {
 .subpage-top-box__img {
   position: relative;
   overflow: hidden;
+  padding-bottom: 24.1666%;
+  background: #D7E0EE;
+}
+
+.subpage-top-box__img.mod-about-us {
+  padding-bottom: 31.25%;
 }
 
 .subpage-top-box__img-fon {
@@ -8494,7 +8629,7 @@ table.mod-long {
     overflow-y: auto;
     background-color: #333333;
     color: #ffffff;
-    padding: 78px 60px 60px;
+    padding: 78px 60px 100px;
     height: 100vh;
     width: 480px;
     z-index: 2;
@@ -10519,6 +10654,12 @@ table.mod-long {
     width: 192px;
     height: 159px;
   }
+
+  .filter .b-category {
+    padding-bottom: 110px;
+    background: #fff;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 567px) {
@@ -10530,7 +10671,22 @@ table.mod-long {
   .wrap-3,
   .wrap-2,
   .contacts-box__columns-right-content {
-    width: 274px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .wrap .wrap-3,
+  .wrap .wrap-2,
+  .wrap .contacts-box__columns-right-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .breadcrumbs-line .wrap,
+  .page404 .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   body .ui-menu {
@@ -10573,7 +10729,7 @@ table.mod-long {
 
   .top-slider__column {
     padding-left: 0;
-    max-height: 122px;
+    max-height: 114px;
   }
 
   .top-slider__big-text {
@@ -11257,6 +11413,10 @@ table.mod-long {
 
   .b-product__price-table table {
     margin-bottom: 15px;
+  }
+
+  .b-contacts__unit-title br {
+    display: none;
   }
 }
 

@@ -4,7 +4,7 @@
 
 @@include('html/_head.html')
 
-<body>
+<body class="subpage">
 
 @@include('html/_sprite.html')
 
@@ -86,11 +86,6 @@
                         </div>
 
                         <div class="detail-product__btn-line">
-                            <a href="#" class="btn detail-product__map-btn">
-                                <span class="btn__content">
-                                    Где купить?
-                                </span>
-                            </a>
                             <div class="detail-product__download">
                                 <div class="detail-product__download-icon">
                                     <svg width="36" height="36"><use xlink:href="#download"></use></svg>
@@ -121,6 +116,20 @@
                 </div>
             </div>
             <section class="detail-product__info-section">
+                <div class="wrap-2">
+                    <div class="detail-partners__contacts-top-line">
+                        <div class="detail-partners__contacts-top-line-text">Все адреса представителей Divinol в Украине</div>
+                        <a href="#" class="btn page-detail__contacts-btn">
+                            <span class="btn__content">
+                                <span class="normal-text">Показать</span>
+                                <span class="active-text">Скрыть</span>
+                                <svg width="10" height="6">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arw-1"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
                 <div class="wrap-2">
                     <div class="partners__contacts">
                         <div class="b-contacts">
@@ -775,9 +784,7 @@
             </section>
         </div>
     </div>
-
     <!--content end-->
-
     @@include('html/_footer.html')
 
 </div>

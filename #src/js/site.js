@@ -461,26 +461,6 @@ $(document).ready(function () {
     });
 
 
-    $(document).on('click', '.detail-product__map-btn, .detail-product__map-close', function (event) {
-        event.preventDefault();
-        if ($(".partners__map").hasClass('active')) {
-            $(this).removeClass('active');
-            $(".detail-product__map-close").removeClass('visible');
-            $(".partners__map").removeClass('active').slideUp(300);
-            if ($('.page-detail__contacts-btn').hasClass('active')) {
-                $('.page-detail__contacts-btn').removeClass('active');
-                $(".b-contacts").removeClass('active').slideUp(300);
-                $(".b-contacts__unit").css({'animation': 'none !important'});
-            }
-        } else {;
-            $(this).addClass('active');
-            $(".partners__map").addClass('active').slideDown(300, function () {
-                $(".detail-product__map-close").addClass('visible');
-            });
-        }
-    });
-
-
     $(document).on('click', '.b-category__second-level-btn', function (event) {
         event.preventDefault();
         if ($(this).hasClass('active')) {

@@ -3,7 +3,7 @@
 
 @@include('html/_head.html')
 
-<body>
+<body class="homepage">
 
 @@include('html/_sprite.html')
 
@@ -57,13 +57,8 @@
             </div>
             <div class="top-slider">
                 <div class="top-slider__slide">
-                    <div class="top-slider__box-for-img mod-video">
-                        <div class="top-slider__fon">
-                            <img src="img/slider-fon.jpg" width="1920" height="1018" alt="">
-                        </div>
-                        <div class="top-slider__img">
-                            <iframe width="1920" height="1018" src="https://www.youtube.com/embed/EJYaBbQetLw?&amp;autoplay=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;playlist=EJYaBbQetLw&amp;controls=0&amp;start=5&amp;mute=1&amp;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                        </div>
+                    <div class="top-slider__box-for-img">
+                        <div class="top-slider__img" style="background-image: url('img/top-img-1.jpg')"></div>
                     </div>
                     <div class="top-slider__content">
                         <div class="wrap">
@@ -86,11 +81,10 @@
                     </div>
                 </div>
                 <div class="top-slider__slide">
-                    <div class="top-slider__box-for-img">
-                        <div class="top-slider__fon">
-                            <img src="img/slider-fon.jpg" width="1920" height="1018" alt="">
+                    <div class="top-slider__box-for-img mod-video">
+                        <div class="top-slider__img">
+                            <iframe width="1920" height="1018" src="https://www.youtube.com/embed/EJYaBbQetLw?&amp;autoplay=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;playlist=EJYaBbQetLw&amp;controls=0&amp;start=5&amp;mute=1&amp;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </div>
-                        <div class="top-slider__img" style="background-image: url('img/top-img-1.jpg')"></div>
                     </div>
                     <div class="top-slider__content">
                         <div class="wrap">
@@ -379,12 +373,12 @@
                                 </div>
                                 <div class="b-title__text">
                                     <h2>
-                                        <div class="b-title__left-part">
+                                        <span class="b-title__left-part">
                                             Где купить
-                                        </div>
-                                        <div class="b-title__right-part">
+                                        </span>
+                                        <span class="b-title__right-part">
                                             продукцию?
-                                        </div>
+                                        </span>
                                     </h2>
                                 </div>
                             </div>
@@ -571,7 +565,7 @@
                                 </p>
                             </div>
                             <div class="main-production__btn-line">
-                                <a href="../Архив/divinol_about-us.html" class="btn">
+                                <a href="divinol_about-us.html" class="btn">
                                     <span class="btn__content">
                                         Подробнее о компании
                                     </span>
