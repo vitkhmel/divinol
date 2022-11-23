@@ -4362,6 +4362,10 @@ table.mod-long {
 .wow {
 	visibility: hidden;
 }
+.spincrement {
+  opacity: 0;
+}
+
 /*------------------media screen 1600 begin-----------------------------*/
 @media screen and (max-width: 1678px) {
 	.for-partners__box-img-icon {
@@ -6822,7 +6826,7 @@ table.mod-long {
 	}
 	.b-product,
 	.category-products-columns.without-aside .b-product {
-		width: 272px;
+		width: 100%;
 	}
 	.pagination-item {
 		margin: 5px 5px;
